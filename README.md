@@ -7,10 +7,13 @@
 `.venv\Scripts\activate` - Windows
 
 Установка зависимостей
-`pip install -r requirements.txt`
+`pip3 install -r requirements.txt`
 
 Запуска посева
 `python seed.py`
+
+Запуска посева macbook
+`python3 seed.py`
 
 Запуск
 `fastapi dev main.py`

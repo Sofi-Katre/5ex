@@ -28,7 +28,7 @@ class Ad(Base):
     description = Column(String)
     category_id = Column(Integer, ForeignKey("categories.id"))
     price = Column(Float)
-    date = Column(Date)
+    dateT = Column(Date)
     author = relationship("User", backref="ads")
     category = relationship("Category", backref="ads")
 

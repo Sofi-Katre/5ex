@@ -4,5 +4,6 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     DB_NAME:str='default' #Название поля из .env, через двоеточие - тип поля, через знак равно - значение по умолчанию
     model_config=SettingsConfigDict(env_file='.env')
+    TOKEN_SECRET:str
 
 settings = Settings()
